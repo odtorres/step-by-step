@@ -11,6 +11,9 @@ git status
 git clone https://...
 git clone https://odtorres@bitbucket.org/odtorres/tutorial.git
 
+## cambiar de https para ssh
+git remote set-url origin git@gitlab.com:blueoceantech/intersys/GSA/ms-search.git
+
 ## añadir todo
 git add .
 
@@ -223,3 +226,6 @@ git format-patch -o folder -NumberOfCommitToPatch
 git reset --hard idCommitBeforeToRemove
 git am .\folder\nameOfThePatch.patch
 git log --oneline
+
+## Multiple SSH Keys settings for different github account
+https://gist.github.com/jexchan/2351996#multiple-ssh-keys-settings-for-different-github-account
