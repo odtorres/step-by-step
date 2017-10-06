@@ -17,6 +17,7 @@ $ docker logs <container id>
 # bash image
 docker exec -it <container id> bash
 docker exec -it <container id> /bin/bash
+docker exec -u root  -it <container id> bash
 
 # run image port 49001
 docker run -d -p 49001:8080 -v $PWD/jenkins:/var/jenkins_home -t jenkins/jenkins
