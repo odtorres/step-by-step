@@ -12,7 +12,7 @@ docker-machine ls
 docker ps
 
 # Print app output
-$ docker logs <container id>
+$ docker logs --follow <container id> 
 
 # bash image
 docker exec -it <container id> bash
@@ -31,3 +31,6 @@ docker-compose -f src/main/docker/cassandra.yml up -d
 
 # build your image
  docker build -t <your username>/app
+
+# remove all containers 
+docker ps -q -a | xargs docker rm
